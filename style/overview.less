@@ -1,0 +1,148 @@
+#b2bCent-overview, #b2bCent-actionPanel{
+    position: relative;
+    margin-bottom: 30px;
+
+    .a-box-group {
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+}
+
+// Detail Card
+.b2bCent-detail{
+    color: @grey-darker;
+
+    .detail-image-left, .detail-image-right {
+        .arrow;
+        margin-top: 30%;
+    }
+
+    .detail-image-left{
+        margin-left: -13px;
+        float: left;
+    }
+
+    .detail-image-right {
+        margin-right: -13px;
+        float: right;
+    }
+
+    label{
+        font-weight: bold;
+        display: inline-block;
+        padding: 0 5px 0 0;
+    }
+
+    .image-placeholder{
+        margin-bottom: 15px;
+    }
+
+    .image-placeholder p{
+        overflow: hidden;
+
+        background: @grey-light;
+        color: @white;
+        text-align: center;
+        margin: 0 auto;
+
+        height: 140px;
+        padding: 20px 0px;
+        font-size: 33px;
+        line-height: 33px;
+
+        @media (min-width: 1280px) and (max-width: 1365px) {
+            font-size: 35px;
+            line-height: 35px;
+        }
+
+        @media (min-width: 1366px) and (max-width: 1599px) {
+            width: 160px;
+            height: 160px;
+            font-size: 38px;
+            line-height: 38px;
+        }
+
+        @media (min-width: 1600px) {
+            width: 170px;
+            height: 170px;
+            font-size: 41px;
+            line-height: 41px;
+        }
+    }
+
+    .image-placeholder img{
+        display: block;
+        margin: 0 auto;
+        max-height: 300px;
+        max-width: 105px;
+
+        @media (min-width: 1280px) and (max-width: 1365px) {
+            max-width: 145px;
+        }
+
+        @media (min-width: 1366px) and (max-width: 1599px) {
+            max-width: 160px;
+        }
+
+        @media (min-width: 1600px) {
+            max-width: 170px;
+        }
+    }
+
+    .b2bCent-detail-badgeLabel{
+        float: left;
+    }
+
+    .b2bCent-detail-badge,
+    .b2bCent-detail-badgeLabel{
+        display: inline-block;
+    }
+}
+
+.b2bCent-viewDetailLink:after{
+    content: '▸';
+    margin-left: 1rem;
+}
+
+// Navigation Card
+.b2bCent-nav > .a-box:first-child{
+    margin-top: -1px;
+    border-radius: 0px;
+}
+
+.b2bCent-nav .tab {
+    overflow: hidden;
+}
+
+.b2bCent-nav.a-box-group > .tab > .a-box-inner {
+    border-left: @nav-border-width solid transparent;
+    border-radius: 0;
+}
+
+.b2bCent-nav.a-box-group > .active-class > .a-box-inner{
+    border-left: @nav-border-width solid @orange;
+}
+
+.b2bCent-nav span.badge{
+    float: right;
+}
+
+.b2bCent-nav .tab:hover{
+    background-color: @grey-lighter;
+}
+
+.b2bCent-nav .tab .sku-arrow {
+    .arrow;
+    float: right;
+}
+
+.b2bCent-nav .tab a{
+    font-weight: bold;
+    font-size: 17px;
+    color: @blue;
+}
+.b2bCent-nav .tab a:hover{
+    text-decoration: none;
+    color: @blue;
+}

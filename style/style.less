@@ -1,0 +1,109 @@
+@import 'variables';
+@import 'mixins';
+@import 'util';
+
+@import 'overview';
+@import 'content';
+@import 'c3';
+
+@import 'mobile';
+@import 'materialIcons';
+
+@import 'actionCenter';
+
+
+h3, p{
+    color: @grey-dark;
+}
+
+div.a-container{
+    min-width: 0;
+}
+
+//The two following rule-sets makes adjustments to the Athena table so that our
+//content can rely on width 100%. Specifically this was so that we could control the
+//overflow of the title instead of the title affecting the width of the table cell.
+.spaui-squishy-container {
+    table-layout: fixed;
+}
+.spaui-squishy-content {
+    width: 100%;
+}
+#b2bCentralApp {
+    margin: auto;
+    padding: 0px 2.5%;
+
+    max-width: 1600px;
+}
+
+.b2bCent-title{
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.b2bCent-title{
+    margin: 10px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:inline;
+}
+.b2bCent-HMD-link{
+    font-size: 13px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+#b2bCent-dataSection{
+    min-height: 500px;
+}
+
+.arrow{
+    background: @sprite-image;
+    background-position: -159px -29px;
+    height: 18px;
+    display: inline-block;
+    width: 10px;
+    cursor: pointer;
+}
+
+// Badges
+.badge-success,
+.badge-warning,
+.badge-info,
+.badge-neutral{
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 3px 13px;
+    border-radius: @border-radius;
+    color: @white;
+}
+.badge-success{
+    background-color: @green;
+}
+.badge-warning{
+    background-color: @red;
+}
+.badge-neutral{
+    background-color: @grey-dark;
+}
+.badge-info{
+    background-color: @blue;
+}
+
+.badge-card-header{
+    margin-left: 40px;
+}
+
+// Error/Landing Page
+.missingSkuLanding{
+    text-align: center;
+    margin: 100px 0;
+}
+
+// Secondary Status
+.detail-secondary-status{
+    color: @status-red;
+}

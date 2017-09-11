@@ -1,0 +1,153 @@
+# -*-perl-*-
+
+package.B2BCentralWebApp = {
+    interfaces = (1.0);
+
+    deploy = {
+        generic = true;
+    };
+
+    build-environment = {
+        chroot = basic;
+        network-access = blocked;
+    };
+
+    build-system = brazilgulp;
+    build-tools = {
+        1.0 = {
+            BrazilGulp = 2.1;
+            NodeJS = 6.x;
+            AmazonUIMarkupTemplates = 3.0;
+        };
+    };
+
+    runtime-dependencies = {
+        1.0 = {
+        };
+    };
+
+    resolves-conflict-dependencies = {
+        1.0 = {
+            NodeJS-acorn = 4.0.x;
+            NodeJS-acorn-jsx = 3.0.x;
+            NodeJS-babel-runtime = 6.11.x;
+            NodeJS-camelcase = 2.1.x;
+            NodeJS-chalk = 1.1.x;
+            NodeJS-commander = 2.9.x;
+            NodeJS-core-js = 2.4.x;
+            NodeJS-doctrine = 1.4.x;
+            NodeJS-eslint = 2.2.x;
+            NodeJS-esutils = 2.0.x;
+            NodeJS-fancy-log = 1.2.x;
+            NodeJS-findup-sync = 0.3.x;
+            #NodeJS-glob 7.0.x causes major issues with BrazilGulp.  Falling back to 6.0.x.
+            NodeJS-glob = 6.0.x;
+            NodeJS-globals = 9.14.x;
+            NodeJS-graceful-fs = 4.1.x;
+            NodeJS-interpret = 1.0.x;
+            NodeJS-isarray = 1.0.x;
+            NodeJS-liftoff = 2.2.x;
+            NodeJS-lodash = 4.16.x;
+            NodeJS-lodash__basecopy = 3.0.x;
+            NodeJS-lodash__isiterateecall = 3.0.x;
+            NodeJS-lodash_keys  = 4.0.x;
+            NodeJS-lodash_some = 4.6.x;
+            NodeJS-minimatch = 3.0.x;
+            NodeJS-node-libs-browser = 2.0.x;
+            NodeJS-object-assign = 4.1.x;
+            NodeJS-path-exists = 2.1.x;
+            NodeJS-pinkie = 2.0.x;
+            NodeJS-pinkie-promise = 2.0.x;
+            NodeJS-readable-stream = 2.1.x;
+            NodeJS-regenerator-runtime = 0.10.x;
+            NodeJS-resolve-from = 2.0.x;
+            NodeJS-semver = 5.3.x;
+            NodeJS-shelljs = 0.6.x;
+            NodeJS-source-map = 0.5.x;
+            NodeJS-strip-bom = 2.0.x;
+            NodeJS-tildify = 1.2.x;
+            NodeJS-uglify-js = 2.7.x;
+            NodeJS-user-home = 2.0.x;
+            NodeJS-vinyl = 1.1.x;
+            NodeJS-wordwrap = 1.0.x;
+            NodeJS-yargs = 3.32.x;
+            NodeJS-request = 2.75.x;
+            NodeJS-babel-code-frame = 6.16.x;
+            NodeJS-babel-polyfill = 6.22.x;
+            NodeJS-babel-template = 6.16.x;
+            NodeJS-babel-traverse = 6.16.x;
+            NodeJS-babel-types = 6.16.x;
+            NodeJS-babylon = 6.11.x;
+            NodeJS-js-tokens = 2.0.x;
+            NodeJS-boom = 2.6.x;
+            NodeJS-hoek = 2.11.x;
+            NodeJS-minimist = 1.2.x;
+            NodeJS-mkdirp = 0.5.x;
+            AmazonUIBaseJS = 3.1;
+        };
+    };
+
+    remove-dependencies = {
+         1.0 = {
+            NodeJS-async = 1.5.x;
+         };
+     };
+
+    test-dependencies = {
+        1.0 = {
+            NodeJS-AmazonUIReactElements = 2.0.x; 
+            
+            NodeJS-babel-plugin-add-module-exports = 0.2.x;
+            NodeJS-babel = 6.5.x;
+            NodeJS-babel-core = 6.14.x;
+            NodeJS-babel-loader = 6.2.x;
+            NodeJS-babel-polyfill = 6.22.x;
+            NodeJS-babel-preset-es2015 = 6.6.x;
+            NodeJS-babel-preset-es2015-without-strict = 0.0.x;
+            NodeJS-babel-preset-react = 6.5.x;
+            NodeJS-babel-register = 6.14.x;
+            NodeJS-brazil-ws = 1.2;
+            NodeJS-c3 = 0.4.x;
+            NodeJS-chai = 1.9.1;
+            NodeJS-css-loader = 0.23.x;
+            NodeJS-enzyme = 2.7.x;
+            NodeJS-eslint = 2.2.x;
+            NodeJS-eslint-config-airbnb = 6.1.x;
+            NodeJS-eslint-plugin-import = 1.1.x;
+            NodeJS-eslint-plugin-jsx-a11y = 2.2.x;
+            NodeJS-eslint-plugin-react = 4.2.x;
+            NodeJS-flux = 2.1.x;
+            NodeJS-fs = 0.0.x;
+            NodeJS-git-guppy = 1.2.x;
+            NodeJS-gulp = 3.9.x;
+            NodeJS-gulp-cli = 1.2.x;
+            NodeJS-gulp-eslint = 2.x;
+            NodeJS-gulp-exec = 2.1.x;
+            NodeJS-gulp-istanbul = 1.1.x;
+            NodeJS-gulp-mocha = 3.0.x;
+            NodeJS-guppy-pre-commit = 0.3.x;
+            NodeJS-immutable = 3.7.x;
+            NodeJS-isparta = 4.0.x;
+            NodeJS-istanbul = 0.4.x;
+            NodeJS-jsdom = 9.9.x;
+            NodeJS-mocha = 3.2.x;
+            NodeJS-moment = 2.14.x;
+            NodeJS-numeral = 2.0.x;
+            NodeJS-path = 0.12.x;
+            NodeJS-react = 15.6.x;
+            NodeJS-react-addons-test-utils = 15.3.x;
+            NodeJS-react-dom = 15.6.x;
+            NodeJS-react-shallow-testutils = 2.0.x;
+            NodeJS-file-loader = 0.9.x;
+            NodeJS-sinon = 1.17.x;
+            NodeJS-style-loader = 0.13.x;
+            NodeJS-less = 2.7.x;
+            NodeJS-less-loader = 2.2.x;
+            NodeJS-webpack = 1.13.x;
+            NodeJS-webpack-dev-server = 1.12.x;
+            NodeJS-webpack-stream = 3.2.x;
+            NodeJS-webpack-shell-plugin = 0.5.x;
+            NodeJS-react-tooltip = 3.2.x;       
+        };
+    };
+};

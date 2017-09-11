@@ -1,0 +1,41 @@
+@media(max-width: 1199px){
+    // AUI Overrides
+    .a-container{
+        padding: 0;
+    }
+    .a-box-group > .a-box:first-child,
+    .a-box-group > .a-box:last-child{
+        border-radius: 0;
+    }
+
+    // b2bCent Overrides
+    .mobile-only{
+        display: block;
+    }
+    .desktop-only{
+        display: none;
+    }
+    #b2bCent-dataSection > .a-column {
+        width: 100%;
+        margin-right: 0;
+    }
+    #b2bCent-overview, #b2bCent-actionPanel{
+        .a-box-group {
+            position: static;
+        }
+    }
+    .b2bCent-nav.a-box-group > .tab > .a-box-inner,
+    .b2bCent-nav.a-box-group > .active-class > .a-box-inner{
+        border: none;
+    }
+    .b2bCent-card{
+        .box-shadow(0; 0; 10px; 0; @grey-light);
+    }
+    .b2bCent-snapshot > .b2bCent-snapshotRow > .a-column.b2bCent-snapshotColumn,
+    .b2bCent-snapshot > .b2bCent-snapshotRow > .a-column.b2bCent-snapshotColumn:first-child{
+        width: 100%;
+        height: auto !important;
+        padding: 18px;
+        border-right: none;
+    }
+}

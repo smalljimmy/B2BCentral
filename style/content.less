@@ -1,0 +1,449 @@
+// Cards
+.b2bCent-card{
+ }
+.cardHeader.a-box .a-box-inner {
+    padding: 9px 18px;
+}
+.cardHeader h2{
+    font-size: 18px;
+    line-height: inherit;
+}
+.actionsPanel h2{
+    font-size: 18px;
+    line-height: inherit;
+}
+.cardHeader p{
+    margin: 0;
+    font-size: 11px;
+}
+.cardHeader .card-actions{
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+.banner{
+    height: 140px;
+    border: 1px solid #ccc;
+    color: @white;
+    background-color: #777777;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+    text-decoration: none;
+    position: relative;    
+}
+
+.banner-new{
+	background-color: #f7fbff;
+	background-image: url("http://g-ecx.images-amazon.com/images/G/01/img/Banner_Bkg.png");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+	box-shadow: 0px 2px 4px 0px grey;
+}
+
+.banner-header-group {
+    text-align: center;
+    position: relative;
+}
+
+.color-h2{
+  color: #2466b2;
+  padding-bottom: 0;
+}
+
+.text-width{
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonDiv
+{
+    text-align: center;
+    color: #ffffff;
+}
+
+#buttonAttr
+{
+    background: #2466b2;
+    border-radius: 0;
+    border-color: #2466b2;
+    color: #ffffff;
+}
+
+#buttonAttr > span.a-button-inner{
+	background: #2466b2;
+	border-radius: 0;
+	box-shadow: none;
+	color: #ffffff;
+}
+
+#buttonAttr span.a-button-text{
+	color: #ffffff;
+}
+
+.video_library {
+    font-size: 18px;
+}
+
+.banner-link{
+    margin: 0;
+    padding: 5px;    
+}
+.b2bCent-snapshotData{
+	font-size: @snapshot-font - 4;
+    color: @grey-dark;
+}
+.b2bCent-snapshotData-b2b{
+    color: #42a5f5;
+}
+.b2bCent-snapshotData-b2c{
+    color: #7b1fa2;
+}
+.b2bCent-snapshotData-overall{
+    color: #447b73;
+}
+.b2bCent-snapshotData{
+    color: @black;
+    font-weight: bold;
+    font-size: @snapshot-font - 4;
+    height: @snapshot-font + 4;
+}
+.b2bCent-snapshotData.small{
+    .b2bCent-snapshotData;
+    font-size: @snapshot-font-small;
+}
+.b2bCent-snapshotData.normal-element{
+    .b2bCent-snapshotData;
+    color: @grey-darker;
+    font-weight : normal;
+}
+.b2bCent-snapshotInfo{
+    color: @grey-dark;
+    font-size: @snapshot-font-info;
+}
+.carouselElement{
+	font-size: @snapshot-font;
+	width: 220px;
+}
+.carouselElement:first-child{
+    margin-left: 0;
+}
+.b2bCent-snapshotData + .b2bCent-snapshotLabel{
+    margin-top: 5px;
+}
+.b2bCent-snapshotData.inline,
+.b2bCent-snapshotLabel.inline,
+.b2bCent-snapshotInfo.inline{
+    display: inline
+}
+.inline{
+    display:inline;
+}
+.info{
+    position: relative;
+    a {
+        .material-icon-size(16px, 16px);
+        .material-icon-color(@grey);
+    };
+    a:link { color: @grey ;};
+    margin-left: 2px;
+}
+.hide{
+    display: none
+}
+.b2bCent-snapshotLink{
+    font-size: @snapshot-font-link;
+}
+
+.b2bCent-snapshotLink.competitiveOffer{
+    margin-top: 5px;
+}
+.b2bCent-card.active{
+    .box-shadow(0; 0; 10px; 0; @grey-light);
+}
+
+.a-container.b2bCent-snapshot{
+    background-color: @grey-lighter;
+    border-radius: @border-radius;
+    margin-bottom: 10px;
+}
+
+.b2bCent-snapshotTableCell{
+    height: 20px;
+}
+
+// TODO: These media queries should be moved out, or more likely eliminated.
+@media (max-width: 1375px){
+    .b2bCent-snapshotTableCell{
+        height: 40px;
+    }    
+}
+
+// SNAPSHOT ROW
+.a-row.b2bCent-snapshotRow{
+    padding: 9px 0;
+    border-bottom: 1px solid @grey-light;
+}
+.a-row.b2bCent-snapshotRow:first-child{
+    padding-top: 0;
+}
+.a-row.b2bCent-snapshotRow.snapshotRow-last{
+    padding-bottom: 0;
+    .a-row.b2bCent-snapshotRow.snapshotRow-border-none;
+}
+.a-row.b2bCent-snapshotRow.snapshotRow-border-none{
+    border-bottom: none;
+}
+.a-row.b2bCent-snapshotRow.snapshotRow-border-heavy{
+    border-bottom: 2px solid @black;
+}
+
+// SNAPSHOT COLUMN
+.a-column.b2bCent-snapshotColumn{
+    border-right: 1px solid @grey-light;
+    padding: 0;
+}
+.a-column.b2bCent-snapshotColumn:first-child{
+    padding-left: 0;
+}
+.a-column.b2bCent-snapshotColumn.snapshotColumn-last{
+    padding-right: 0;
+    .a-column.b2bCent-snapshotColumn.snapshotColumn-border-none;
+}
+.a-column.b2bCent-snapshotColumn.snapshotColumn-border-none{
+    border-right: none;
+}
+.a-column.b2bCent-snapshotColumn.snapshotColumn-border-heavy{
+    border-right: 2px solid @black;
+}
+
+// menus
+.menu {
+    width: 100%;
+    text-align: right;
+}
+
+.menu-dropdown{
+    text-align: left;
+    position: absolute;
+    z-index: @z-index-above;
+    background-color: @white;
+    border: 1px solid @grey-light;
+    .box-shadow(0px; 2px; 4px; @menu-shadow-gray);
+    border-radius: 3px;
+    right: -25px;
+    margin-top: 16px;
+}
+
+.menu-dropdown:focus{
+    outline: none;
+}
+
+.menu-item{
+    position: relative;
+    padding: @menu-vertical-padding (@menu-horizontal-padding + @menu-icon-font-size + @menu-icon-left-padding) @menu-vertical-padding @menu-horizontal-padding;
+    text-transform: uppercase;
+    color: @grey-dark;
+    font-size: @menu-font-size;
+
+    i{
+        position: absolute;
+        right: @menu-horizontal-padding;
+        color: @grey-dark;
+        font-size: @menu-icon-font-size;
+    }
+
+    &.selected i {
+        color: @grey-darker;
+    }
+
+    &:hover{
+        color: @grey-darker;
+        background-color: @grey-light;
+    }
+
+    &.disabled {
+        opacity: 0.7;
+        pointer-events: none;
+    }
+}
+
+// buttons
+.inline-link {
+    background-color: transparent;
+    border: none;
+    color: @blue;
+    cursor: pointer;
+}
+
+.inline-link.cancel {
+    color: @grey-dark;
+}
+
+.inline-link.cancel:hover {
+    color: @grey-dark;
+}
+
+.inline-link.disabled {
+    color: @grey-dark;
+    pointer-events: none;
+    cursor: default;
+}
+
+.inline-link:focus {
+    outline: none;
+}
+
+.inline-link:hover {
+    color: @blue;
+    text-decoration: none;
+}
+
+.no_top_padding{
+    padding-top: 0px;
+}
+
+.date_range{
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+.graphContainer{
+    padding: 0px;   
+}
+
+// dateRangePopover
+.dateRangeContainer{
+    background-color: @grey-lighter;
+    border-radius: 4px;
+    padding: 8px 2px;
+}
+
+.dateRangeContainer > span > a{
+    text-decoration: none;
+}
+
+.dateRangeText{
+    color: @grey-darker;
+    font-size: 11px;
+    margin-left: 5px;
+}
+
+.calendar-icon{
+    color:@grey-dark;
+    font-size: 20px;
+    margin: 0 -6px;
+    position: relative;
+    top: 8px;
+}
+
+.calendarOuter{
+    margin-top: 22px;
+}
+
+.calendarInner{
+    margin-top: -22px;
+}
+
+.calendarInner .calendarTitle{
+    margin-top: 0px;
+    font-size: 14px;
+    color: @grey-darker;
+    line-height: 28px;
+}
+
+.calendarFrom{
+    float: left;
+    padding: 0px 20px;
+}
+
+.calendarTo{
+    float: right;
+}
+
+.menuButtonGroup{
+    padding-bottom: 5px;
+    width: 100%;
+}
+
+.menuButton{
+    padding-bottom: 0px;
+    width: 100%;
+}
+
+.a-button-text.a-text-left.a-declarative{
+    text-align: center !important;
+}
+
+.iframe-video{
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.a-icon-popover{
+    margin-right: 10px;
+}
+
+.button-close-banner{
+	top: 10px;
+	right: 0px;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.daterange-box{
+    position:relative; left: -4px;
+}
+
+.card-notification-box {
+     position: relative;
+     text-align: center;
+ 
+     padding: 15px;
+ 
+     border-radius: @border-radius;
+     border: 1px solid @grey-light;
+ 
+     .a-box {
+         border: 2px dashed @grey-light;
+         padding: 8px;
+     }
+}
+
+.plot-container {
+    position: relative;
+
+    .loading-message {
+        display: none;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        top: 18px;
+        font-size: 38px;
+        img {
+            width: 75px;
+            height: 75px;
+        }
+    }
+
+    &.data-not-loaded {
+        .c3-axis-x {
+            display: none;
+        }
+        .loading-message{
+            display: block;
+        }
+    }
+}
+
+.a-expander-content p {
+	color: @black;
+}
+

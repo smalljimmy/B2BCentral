@@ -1,0 +1,22 @@
+.display-flex {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.flex(@flex-val){
+    -webkit-box-flex: @flex-val;
+    -moz-box-flex: @flex-val;
+    -webkit-flex: @flex-val;
+    -ms-flex: @flex-val;
+    flex: @flex-val;
+}
+
+.box-shadow(...){
+    -webkit-box-shadow: @arguments;
+    -moz-box-shadow: @arguments;
+    box-shadow: @arguments;
+}
